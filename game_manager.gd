@@ -1,3 +1,4 @@
+class_name GameManager
 extends Node
 
 
@@ -30,7 +31,7 @@ const state_names = {
 var state:
 	set(value):
 		state = value
-		SignalBus.game_state_changed.emit(state, state_names[state])
+		SignalBus.game_state_changed.emit(state)
 	get:
 		return state
 
