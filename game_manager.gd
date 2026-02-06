@@ -57,4 +57,8 @@ func _ready():
 	
 	
 func on_next_state_button_pressed():
-	state += 1
+	match state:
+		STATE.BATTLE_RESULT:
+			state = STATE.SHOP_ENTER
+		_:
+			state += 1

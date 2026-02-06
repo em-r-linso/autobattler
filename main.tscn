@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://fjcqnixt2dp4"]
 
 [ext_resource type="Script" uid="uid://bmbhtuklso6m" path="res://game_manager.gd" id="1_ig7tw"]
-[ext_resource type="Script" uid="uid://t7vsv4gfupph" path="res://signal_bus.gd" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://db53osn54d2a7" path="res://next_state_button.gd" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://bijpdptop5vfj" path="res://money_label.gd" id="4_lquwl"]
 [ext_resource type="Script" uid="uid://61gs4rx5ybou" path="res://state_label.gd" id="5_lquwl"]
@@ -11,9 +10,6 @@
 [node name="game manager" type="Node" parent="." unique_id=1929405047]
 script = ExtResource("1_ig7tw")
 initial_money = 69
-
-[node name="signal bus" type="Node" parent="." unique_id=489246307]
-script = ExtResource("2_0xm2m")
 
 [node name="placeholder ui container" type="VBoxContainer" parent="." unique_id=373669900]
 offset_right = 40.0
