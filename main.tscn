@@ -9,7 +9,7 @@
 
 [node name="game manager" type="Node" parent="." unique_id=1929405047]
 script = ExtResource("1_ig7tw")
-initial_money = 69
+initial_money = 6
 
 [node name="placeholder ui container" type="VBoxContainer" parent="." unique_id=373669900]
 offset_right = 40.0

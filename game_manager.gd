@@ -26,11 +26,18 @@ const state_names = {
 
 @export var initial_state = STATE.TITLE
 @export var initial_money = 0
+@export var interest_rate = 0.2 # 0.2 == 20% == 1 interest per 5 money
+@export var max_interest = 5
 
 
 var state:
 	set(value):
 		state = value
+		match state:
+			STATE.SHOP_ENTER:
+				on_state_shop_enter()
+			_:
+				pass
 		SignalBus.game_state_changed.emit(state)
 	get:
 		return state
@@ -62,3 +69,7 @@ func on_next_state_button_pressed():
 			state = STATE.SHOP_ENTER
 		_:
 			state += 1
+			
+
+func on_state_shop_enter():
+	money += min(floor(money * interest_rate), max_interest)
