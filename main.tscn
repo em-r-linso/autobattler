@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://fjcqnixt2dp4"]
+
+[ext_resource type="Script" uid="uid://bmbhtuklso6m" path="res://state_manager.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://t7vsv4gfupph" path="res://signal_bus.gd" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://cysarj03lb8wg" path="res://listener_test.gd" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://db53osn54d2a7" path="res://next_state_button.gd" id="4_1bvp3"]
+
+[node name="main" type="Node2D" unique_id=1755058329]
+
+[node name="state manager" type="Node" parent="." unique_id=1929405047]
+script = ExtResource("1_ig7tw")
+
+[node name="signal bus" type="Node" parent="." unique_id=489246307]
+script = ExtResource("2_0xm2m")
+
+[node name="listener test" type="Node" parent="." unique_id=2122921779]
+script = ExtResource("3_h2yge")
+
+[node name="next state button" type="Button" parent="." unique_id=143042093]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "next state"
+script = ExtResource("4_1bvp3")
