@@ -10,7 +10,9 @@ enum STATE {
 	BATTLE_RESULT,
 	MATCH_RESULT
 }
+
 const state_names = {
+	null: "null",
 	STATE.TITLE: "title",
 	STATE.SHOP_ENTER: "shop enter",
 	STATE.SHOP_EVENT: "shop event",
@@ -22,13 +24,22 @@ const state_names = {
 
 
 @export var initial_state = STATE.TITLE
+@export var initial_money = 0
+
+
 var state:
 	set(value):
 		state = value
-		print(state_names[state])
-		SignalBus.game_state_changed.emit(state)
+		SignalBus.game_state_changed.emit(state, state_names[state])
 	get:
 		return state
+
+var money:
+	set(value):
+		money = value
+		SignalBus.money_changed.emit(money)
+	get:
+		return money
 
 
 func _enter_tree():
@@ -41,6 +52,7 @@ func _exit_tree():
 
 func _ready():
 	state = initial_state
+	money = initial_money
 	
 	
 func on_next_state_button_pressed():
