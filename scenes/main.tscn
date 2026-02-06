@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://fjcqnixt2dp4"]
 
-[ext_resource type="Script" uid="uid://bmbhtuklso6m" path="res://game_manager.gd" id="1_ig7tw"]
-[ext_resource type="Script" uid="uid://db53osn54d2a7" path="res://next_state_button.gd" id="4_1bvp3"]
-[ext_resource type="Script" uid="uid://bijpdptop5vfj" path="res://money_label.gd" id="4_lquwl"]
-[ext_resource type="Script" uid="uid://61gs4rx5ybou" path="res://state_label.gd" id="5_lquwl"]
+[ext_resource type="Script" uid="uid://bmbhtuklso6m" path="res://scripts/game_manager.gd" id="1_jyhfs"]
+[ext_resource type="Script" uid="uid://db53osn54d2a7" path="res://scripts/next_state_button.gd" id="2_tbgi4"]
+[ext_resource type="Script" uid="uid://bijpdptop5vfj" path="res://scripts/money_label.gd" id="3_tefeu"]
+[ext_resource type="Script" uid="uid://61gs4rx5ybou" path="res://scripts/state_label.gd" id="4_o6xl0"]
 
 [node name="main" type="Node2D" unique_id=1755058329]
 
 [node name="game manager" type="Node" parent="." unique_id=1929405047]
-script = ExtResource("1_ig7tw")
+script = ExtResource("1_jyhfs")
 initial_money = 6
 
 [node name="placeholder ui container" type="VBoxContainer" parent="." unique_id=373669900]
@@ -18,14 +18,14 @@ offset_bottom = 40.0
 [node name="next state button" type="Button" parent="placeholder ui container" unique_id=143042093]
 layout_mode = 2
 text = "next state"
-script = ExtResource("4_1bvp3")
+script = ExtResource("2_tbgi4")
 
 [node name="money label" type="Label" parent="placeholder ui container" unique_id=944645010]
 layout_mode = 2
 text = "[money]"
-script = ExtResource("4_lquwl")
+script = ExtResource("3_tefeu")
 
 [node name="state label" type="Label" parent="placeholder ui container" unique_id=1886998971]
 layout_mode = 2
 text = "[state]"
-script = ExtResource("5_lquwl")
+script = ExtResource("4_o6xl0")
