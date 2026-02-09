@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://db53osn54d2a7" path="res://scripts/next_state_button.gd" id="2_tbgi4"]
 [ext_resource type="Script" uid="uid://bijpdptop5vfj" path="res://scripts/money_label.gd" id="3_tefeu"]
 [ext_resource type="Script" uid="uid://61gs4rx5ybou" path="res://scripts/state_label.gd" id="4_o6xl0"]
+[ext_resource type="Script" uid="uid://s4lhp2kc5pwo" path="res://scenes/field.gd" id="5_tefeu"]
+[ext_resource type="Texture2D" uid="uid://cw07u3fai66or" path="res://textures/_placeholder.png" id="6_o6xl0"]
 
 [node name="main" type="Node2D" unique_id=1755058329]
 
@@ -29,3 +31,33 @@ script = ExtResource("3_tefeu")
 layout_mode = 2
 text = "[state]"
 script = ExtResource("4_o6xl0")
+
+[node name="field" type="Node2D" parent="." unique_id=708211173 node_paths=PackedStringArray("items")]
+position = Vector2(304, 327)
+script = ExtResource("5_tefeu")
+items = [NodePath("item"), NodePath("item2"), NodePath("item3"), NodePath("item4"), NodePath("item5"), NodePath("item6"), NodePath("item7"), NodePath("item8")]
+radius = 100.0
+
+[node name="item" type="Sprite2D" parent="field" unique_id=1849000137]
+texture = ExtResource("6_o6xl0")
+
+[node name="item2" type="Sprite2D" parent="field" unique_id=2121229433]
+texture = ExtResource("6_o6xl0")
+
+[node name="item3" type="Sprite2D" parent="field" unique_id=613159164]
+texture = ExtResource("6_o6xl0")
+
+[node name="item4" type="Sprite2D" parent="field" unique_id=578729328]
+texture = ExtResource("6_o6xl0")
+
+[node name="item5" type="Sprite2D" parent="field" unique_id=729978399]
+texture = ExtResource("6_o6xl0")
+
+[node name="item6" type="Sprite2D" parent="field" unique_id=295577575]
+texture = ExtResource("6_o6xl0")
+
+[node name="item7" type="Sprite2D" parent="field" unique_id=1643725106]
+texture = ExtResource("6_o6xl0")
+
+[node name="item8" type="Sprite2D" parent="field" unique_id=1979209994]
+texture = ExtResource("6_o6xl0")
