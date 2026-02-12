@@ -24,6 +24,7 @@ const state_names = {
 }
 
 
+@export var player_field : Field
 @export var initial_state = STATE.TITLE
 @export var initial_money = 0
 @export var interest_rate = 0.2 # 0.2 == 20% == 1 interest per 5 money
@@ -73,3 +74,4 @@ func on_next_state_button_pressed():
 
 func on_state_shop_enter():
 	money += min(floor(money * interest_rate), max_interest)
+	player_field.moon_phase = (player_field.moon_phase + 1) % Field.MOON_PHASE.size()

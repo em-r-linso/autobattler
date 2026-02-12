@@ -75,8 +75,9 @@ animations = [{
 
 [node name="main" type="Node2D" unique_id=1755058329]
 
-[node name="game manager" type="Node" parent="." unique_id=1929405047]
+[node name="game manager" type="Node" parent="." unique_id=1929405047 node_paths=PackedStringArray("player_field")]
 script = ExtResource("1_jyhfs")
+player_field = NodePath("../field")
 initial_money = 6
 
 [node name="placeholder ui container" type="VBoxContainer" parent="." unique_id=373669900]
@@ -98,9 +99,10 @@ layout_mode = 2
 text = "[state]"
 script = ExtResource("4_o6xl0")
 
-[node name="field" type="Node2D" parent="." unique_id=708211173 node_paths=PackedStringArray("slots")]
+[node name="field" type="Node2D" parent="." unique_id=708211173 node_paths=PackedStringArray("moon_sprite", "slots")]
 position = Vector2(304, 327)
 script = ExtResource("5_tefeu")
+moon_sprite = NodePath("moon sprite")
 slots = [NodePath("slot1"), NodePath("slot2"), NodePath("slot3"), NodePath("slot4"), NodePath("slot5"), NodePath("slot6"), NodePath("slot7"), NodePath("slot8")]
 radius = 120.0
 

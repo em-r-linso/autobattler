@@ -9,5 +9,4 @@ var angle = 0.0:
 		return angle
 	set(value):
 		angle = value
-		print(angle)
 		slot_sprite.rotate(angle)
