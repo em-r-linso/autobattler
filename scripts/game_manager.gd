@@ -74,4 +74,4 @@ func on_next_state_button_pressed():
 
 func on_state_shop_enter():
 	money += min(floor(money * interest_rate), max_interest)
-	player_field.moon_phase = (player_field.moon_phase + 1) % Field.MOON_PHASE.size()
+	player_field.moon_phase = ((player_field.moon_phase + 1) % Field.MOON_PHASE.size()) as Field.MOON_PHASE
