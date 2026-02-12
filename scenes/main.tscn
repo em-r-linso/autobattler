@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://db53osn54d2a7" path="res://scripts/next_state_button.gd" id="2_tbgi4"]
 [ext_resource type="Script" uid="uid://bijpdptop5vfj" path="res://scripts/money_label.gd" id="3_tefeu"]
 [ext_resource type="Script" uid="uid://61gs4rx5ybou" path="res://scripts/state_label.gd" id="4_o6xl0"]
-[ext_resource type="Script" uid="uid://s4lhp2kc5pwo" path="res://scenes/field.gd" id="5_tefeu"]
-[ext_resource type="Texture2D" uid="uid://cw07u3fai66or" path="res://textures/_placeholder.png" id="6_o6xl0"]
+[ext_resource type="Script" uid="uid://s4lhp2kc5pwo" path="res://scripts/field.gd" id="5_tefeu"]
+[ext_resource type="PackedScene" uid="uid://cpo73yi3yi11p" path="res://scenes/slot.tscn" id="6_tefeu"]
 
 [node name="main" type="Node2D" unique_id=1755058329]
 
@@ -32,32 +32,24 @@ layout_mode = 2
 text = "[state]"
 script = ExtResource("4_o6xl0")
 
-[node name="field" type="Node2D" parent="." unique_id=708211173 node_paths=PackedStringArray("items")]
+[node name="field" type="Node2D" parent="." unique_id=708211173 node_paths=PackedStringArray("slots")]
 position = Vector2(304, 327)
 script = ExtResource("5_tefeu")
-items = [NodePath("item"), NodePath("item2"), NodePath("item3"), NodePath("item4"), NodePath("item5"), NodePath("item6"), NodePath("item7"), NodePath("item8")]
-radius = 100.0
+slots = [NodePath("slot1"), NodePath("slot2"), NodePath("slot3"), NodePath("slot4"), NodePath("slot5"), NodePath("slot6"), NodePath("slot7"), NodePath("slot8")]
+radius = 120.0
 
-[node name="item" type="Sprite2D" parent="field" unique_id=1849000137]
-texture = ExtResource("6_o6xl0")
+[node name="slot1" parent="field" unique_id=10372741 instance=ExtResource("6_tefeu")]
 
-[node name="item2" type="Sprite2D" parent="field" unique_id=2121229433]
-texture = ExtResource("6_o6xl0")
+[node name="slot2" parent="field" unique_id=1568327844 instance=ExtResource("6_tefeu")]
 
-[node name="item3" type="Sprite2D" parent="field" unique_id=613159164]
-texture = ExtResource("6_o6xl0")
+[node name="slot3" parent="field" unique_id=1011283325 instance=ExtResource("6_tefeu")]
 
-[node name="item4" type="Sprite2D" parent="field" unique_id=578729328]
-texture = ExtResource("6_o6xl0")
+[node name="slot4" parent="field" unique_id=911430286 instance=ExtResource("6_tefeu")]
 
-[node name="item5" type="Sprite2D" parent="field" unique_id=729978399]
-texture = ExtResource("6_o6xl0")
+[node name="slot5" parent="field" unique_id=318766373 instance=ExtResource("6_tefeu")]
 
-[node name="item6" type="Sprite2D" parent="field" unique_id=295577575]
-texture = ExtResource("6_o6xl0")
+[node name="slot6" parent="field" unique_id=993103277 instance=ExtResource("6_tefeu")]
 
-[node name="item7" type="Sprite2D" parent="field" unique_id=1643725106]
-texture = ExtResource("6_o6xl0")
+[node name="slot7" parent="field" unique_id=387551393 instance=ExtResource("6_tefeu")]
 
-[node name="item8" type="Sprite2D" parent="field" unique_id=1979209994]
-texture = ExtResource("6_o6xl0")
+[node name="slot8" parent="field" unique_id=1888141648 instance=ExtResource("6_tefeu")]

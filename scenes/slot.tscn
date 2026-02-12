@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cpo73yi3yi11p"]
+
+[ext_resource type="Script" uid="uid://dkgb3uhpilyxr" path="res://scenes/slot.gd" id="1_vqyee"]
+[ext_resource type="Texture2D" uid="uid://dl8636ttbgjev" path="res://textures/slot_unlit.png" id="2_5f2j7"]
+[ext_resource type="Texture2D" uid="uid://cw07u3fai66or" path="res://textures/_placeholder.png" id="3_sjnr7"]
+
+[node name="slot" type="Node2D" unique_id=10372741 node_paths=PackedStringArray("slot_sprite")]
+script = ExtResource("1_vqyee")
+slot_sprite = NodePath("slot sprite")
+
+[node name="slot sprite" type="Sprite2D" parent="." unique_id=436828361]
+texture = ExtResource("2_5f2j7")
+
+[node name="item sprite" type="Sprite2D" parent="." unique_id=1701470718]
+texture = ExtResource("3_sjnr7")
