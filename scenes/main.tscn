@@ -6,6 +6,72 @@
 [ext_resource type="Script" uid="uid://61gs4rx5ybou" path="res://scripts/state_label.gd" id="4_o6xl0"]
 [ext_resource type="Script" uid="uid://s4lhp2kc5pwo" path="res://scripts/field.gd" id="5_tefeu"]
 [ext_resource type="PackedScene" uid="uid://cpo73yi3yi11p" path="res://scenes/slot.tscn" id="6_tefeu"]
+[ext_resource type="Texture2D" uid="uid://2y757l3ysnqf" path="res://textures/moon.png" id="7_o6xl0"]
+[ext_resource type="Script" uid="uid://1rll4o3c0312" path="res://scenes/moon_sprite.gd" id="8_tipki"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
+atlas = ExtResource("7_o6xl0")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85g3d"]
+atlas = ExtResource("7_o6xl0")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_choun"]
+atlas = ExtResource("7_o6xl0")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ya4ey"]
+atlas = ExtResource("7_o6xl0")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb6dy"]
+atlas = ExtResource("7_o6xl0")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trceg"]
+atlas = ExtResource("7_o6xl0")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8y0u"]
+atlas = ExtResource("7_o6xl0")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkv2x"]
+atlas = ExtResource("7_o6xl0")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jbj1t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tipki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85g3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_choun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ya4ey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb6dy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trceg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8y0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkv2x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="main" type="Node2D" unique_id=1755058329]
 
@@ -37,6 +103,12 @@ position = Vector2(304, 327)
 script = ExtResource("5_tefeu")
 slots = [NodePath("slot1"), NodePath("slot2"), NodePath("slot3"), NodePath("slot4"), NodePath("slot5"), NodePath("slot6"), NodePath("slot7"), NodePath("slot8")]
 radius = 120.0
+
+[node name="moon sprite" type="AnimatedSprite2D" parent="field" unique_id=1011312189]
+texture_filter = 1
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_jbj1t")
+script = ExtResource("8_tipki")
 
 [node name="slot1" parent="field" unique_id=10372741 instance=ExtResource("6_tefeu")]
 
