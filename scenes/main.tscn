@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://s4lhp2kc5pwo" path="res://scripts/field.gd" id="5_tefeu"]
 [ext_resource type="PackedScene" uid="uid://cpo73yi3yi11p" path="res://scenes/slot.tscn" id="6_tefeu"]
 [ext_resource type="Texture2D" uid="uid://2y757l3ysnqf" path="res://textures/moon.png" id="7_o6xl0"]
-[ext_resource type="Script" uid="uid://1rll4o3c0312" path="res://scenes/moon_sprite.gd" id="8_tipki"]
+[ext_resource type="Script" uid="uid://1rll4o3c0312" path="res://scripts/moon_sprite.gd" id="8_tipki"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
 atlas = ExtResource("7_o6xl0")
