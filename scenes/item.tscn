@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ddbv06yhn58sf"]
+
+[ext_resource type="Script" uid="uid://bs66sr1m6pxhr" path="res://scripts/item.gd" id="1_s8enn"]
+[ext_resource type="Script" uid="uid://jsyhxju7ayo3" path="res://scripts/item_data.gd" id="2_ro5b8"]
+[ext_resource type="Resource" uid="uid://cjmcanllp5la4" path="res://resources/items/item_c.tres" id="3_d265e"]
+[ext_resource type="Resource" uid="uid://cb7u2v2ordqt2" path="res://resources/items/item_b.tres" id="4_5vp5n"]
+[ext_resource type="Resource" uid="uid://dkbvgkyujw1w3" path="res://resources/items/item_a.tres" id="5_c4387"]
+
+[node name="item" type="Node2D" unique_id=716375729 node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_s8enn")
+debug_random_items = Array[ExtResource("2_ro5b8")]([ExtResource("3_d265e"), ExtResource("4_5vp5n"), ExtResource("5_c4387")])
+sprite = NodePath("item sprite")
+
+[node name="item sprite" type="Sprite2D" parent="." unique_id=179881347]

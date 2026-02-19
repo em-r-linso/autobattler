@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://dkbvgkyujw1w3"]
+
+[ext_resource type="Script" uid="uid://bbm753smymkuj" path="res://scripts/item_behavior.gd" id="1_ml8kj"]
+[ext_resource type="Script" uid="uid://jsyhxju7ayo3" path="res://scripts/item_data.gd" id="2_djwoe"]
+[ext_resource type="Resource" uid="uid://bxhxskp31pyuk" path="res://resources/item behaviors/print_debug_behavior.tres" id="2_qaok1"]
+[ext_resource type="Texture2D" uid="uid://cpa83kq33udwb" path="res://textures/items/item_a.png" id="3_qaok1"]
+
+[resource]
+script = ExtResource("2_djwoe")
+name = "Item A"
+sprite = ExtResource("3_qaok1")
+cost = 5
+behaviors = Array[ExtResource("1_ml8kj")]([ExtResource("2_qaok1")])
+metadata/_custom_type_script = "uid://jsyhxju7ayo3"

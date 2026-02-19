@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dkgb3uhpilyxr" path="res://scripts/slot.gd" id="1_vqyee"]
 [ext_resource type="Texture2D" uid="uid://gidch3t0t4ps" path="res://textures/slot.png" id="2_vqyee"]
-[ext_resource type="Texture2D" uid="uid://cw07u3fai66or" path="res://textures/_placeholder.png" id="3_sjnr7"]
+[ext_resource type="PackedScene" uid="uid://ddbv06yhn58sf" path="res://scenes/item.tscn" id="3_vqyee"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5f2j7"]
 atlas = ExtResource("2_vqyee")
@@ -33,5 +33,4 @@ slot_sprite = NodePath("slot sprite")
 [node name="slot sprite" type="AnimatedSprite2D" parent="." unique_id=882550393]
 sprite_frames = SubResource("SpriteFrames_n3jes")
 
-[node name="item sprite" type="Sprite2D" parent="." unique_id=1701470718]
-texture = ExtResource("3_sjnr7")
+[node name="item" parent="." unique_id=716375729 instance=ExtResource("3_vqyee")]

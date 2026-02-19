@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="PrintDebugBehavior" format=3 uid="uid://bxhxskp31pyuk"]
+
+[ext_resource type="Script" uid="uid://d2k035ax6r8i1" path="res://scripts/item behaviors/print_debug_behavior.gd" id="1_mio2m"]
+
+[resource]
+script = ExtResource("1_mio2m")
+metadata/_custom_type_script = "uid://d2k035ax6r8i1"

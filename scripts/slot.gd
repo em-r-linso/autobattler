@@ -3,7 +3,6 @@ class_name Slot extends Node2D
 
 @export var slot_sprite : AnimatedSprite2D
 
-
 var is_lit = false:
 	get:
 		return is_lit
